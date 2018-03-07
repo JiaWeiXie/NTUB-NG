@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+  name = 'JSON';
+  google_link = 'https://www.google.com.tw/';
+
+  click_action() {
+    this.name += 'a';
+  }
 }

@@ -1,0 +1,8 @@
+<h2>Lesson2</h2>
+
+<button (click)="clickAction()">Change Show</button>
+<h3 *ngIf="isShow">Hi Hi Hi</h3>
+<br>
+<input type="text" [(ngModel)]="cal">
+<h3 *ngIf="cal >= 60">Good</h3>
+<h3 *ngIf="cal < 60">Bad</h3>
