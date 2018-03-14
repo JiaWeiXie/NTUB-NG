@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-lesson1',
@@ -6,12 +6,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./lesson1.component.css']
 })
 export class Lesson1Component implements OnInit {
-  twMoney = 0;
+  @Input() twMoney = 0;
+  @Output() countChange: EventEmitter<number> = new EventEmitter<number>();
   circle = 0;
 
   constructor() { }
 
   ngOnInit() {
+  }
+
+  change(event: any) {
+    this.countChange.emit(event);
   }
 
 }

@@ -21,6 +21,6 @@ export class AppComponent {
 }
 
 export interface Account {
-  account: string,
-  password: string
+  account: string;
+  password: string;
 }
