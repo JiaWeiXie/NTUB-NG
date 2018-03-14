@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { lstat } from 'fs';
 
 @Component({
   selector: 'app-pratice1',

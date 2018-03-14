@@ -14,7 +14,7 @@ import { Lesson5Component } from './lesson5/lesson5.component';
 import { InputButtonComponent } from './input-button/input-button.component';
 import { Lesson6Component } from './lesson6/lesson6.component';
 import { HightlightDirective } from './hightlight.directive';
-
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
@@ -32,7 +32,8 @@ import { HightlightDirective } from './hightlight.directive';
   imports: [
     BrowserModule,
     FormsModule,
-    NgPipesModule
+    NgPipesModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
