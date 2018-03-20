@@ -15,6 +15,13 @@ import { InputButtonComponent } from './input-button/input-button.component';
 import { Lesson6Component } from './lesson6/lesson6.component';
 import { HightlightDirective } from './hightlight.directive';
 import { AppRoutingModule } from './app-routing.module';
+import { Homework2Component } from './homework2/homework2.component';
+import { Homework2BtnComponent } from './homework2-btn/homework2-btn.component';
+import { DyclassComponent } from './dyclass/dyclass.component';
+import { Jq1Component } from './jq1/jq1.component';
+import { Lesson7Component } from './lesson7/lesson7.component';
+
+import { BmiService } from './bmi.service';
 
 @NgModule({
   declarations: [
@@ -27,15 +34,22 @@ import { AppRoutingModule } from './app-routing.module';
     Lesson5Component,
     InputButtonComponent,
     Lesson6Component,
-    HightlightDirective
+    HightlightDirective,
+    Homework2Component,
+    Homework2BtnComponent,
+    DyclassComponent,
+    Jq1Component,
+    Lesson7Component
   ],
   imports: [
-    BrowserModule,
+  BrowserModule,
     FormsModule,
     NgPipesModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [
+    BmiService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

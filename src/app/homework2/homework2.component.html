@@ -1,0 +1,7 @@
+<input type="number" [(ngModel)]="num1"> + <input type="number" [(ngModel)]="num2">
+<br>
+<div style="border:1px solid;">
+  <app-homework2-btn [v1]="num1" [v2]="num2" (cal)="inCal($event)"></app-homework2-btn>
+</div>
+<br>
+Ans: <label>{{ num3 }}</label>

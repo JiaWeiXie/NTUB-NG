@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { BmiService } from '../bmi.service';
 
 @Component({
   selector: 'app-lesson2',
@@ -8,9 +9,10 @@ import { Component, OnInit } from '@angular/core';
 export class Lesson2Component implements OnInit {
   isShow = true;
   cal = 0;
-  constructor() { }
+  constructor(private bmiService: BmiService) { }
 
   ngOnInit() {
+    this.bmiService.pub_temp1 = 99;
   }
 
   clickAction() {

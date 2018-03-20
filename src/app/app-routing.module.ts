@@ -7,6 +7,10 @@ import { Lesson3Component } from './lesson3/lesson3.component';
 import { Lesson6Component } from './lesson6/lesson6.component';
 import { Lesson5Component } from './lesson5/lesson5.component';
 import { Lesson4Component } from './lesson4/lesson4.component';
+import { Homework2Component } from './homework2/homework2.component';
+import { DyclassComponent } from './dyclass/dyclass.component';
+import { Jq1Component } from './jq1/jq1.component';
+import { Lesson7Component } from './lesson7/lesson7.component';
 
 const routes: Routes = [
   {path: '', redirectTo: 'lesson1', pathMatch: 'full'},
@@ -16,6 +20,11 @@ const routes: Routes = [
   {path: 'lesson4', component: Lesson4Component},
   {path: 'lesson5', component: Lesson5Component},
   {path: 'lesson6', component: Lesson6Component},
+  {path: 'homework2', component: Homework2Component},
+  {path: 'dyclass', component: DyclassComponent},
+  {path: 'dyclass/:number/:number2', component: DyclassComponent},
+  {path: 'jq1', component: Jq1Component},
+  {path: 'lesson7', component: Lesson7Component},
   {path: '**', component: Pratice1Component},
 ];
 
