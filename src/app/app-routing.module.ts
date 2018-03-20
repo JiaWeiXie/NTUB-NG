@@ -11,6 +11,7 @@ import { Homework2Component } from './homework2/homework2.component';
 import { DyclassComponent } from './dyclass/dyclass.component';
 import { Jq1Component } from './jq1/jq1.component';
 import { Lesson7Component } from './lesson7/lesson7.component';
+import { Homework3Component } from './homework3/homework3.component';
 
 const routes: Routes = [
   {path: '', redirectTo: 'lesson1', pathMatch: 'full'},
@@ -25,6 +26,7 @@ const routes: Routes = [
   {path: 'dyclass/:number/:number2', component: DyclassComponent},
   {path: 'jq1', component: Jq1Component},
   {path: 'lesson7', component: Lesson7Component},
+  {path: 'homework3', component: Homework3Component},
   {path: '**', component: Pratice1Component},
 ];
 

@@ -22,6 +22,9 @@ import { Jq1Component } from './jq1/jq1.component';
 import { Lesson7Component } from './lesson7/lesson7.component';
 
 import { BmiService } from './bmi.service';
+import { Homework3Component } from './homework3/homework3.component';
+import { Homework3BtnComponent } from './homework3-btn/homework3-btn.component';
+import { Hw3Service } from './hw3.service';
 
 @NgModule({
   declarations: [
@@ -39,7 +42,9 @@ import { BmiService } from './bmi.service';
     Homework2BtnComponent,
     DyclassComponent,
     Jq1Component,
-    Lesson7Component
+    Lesson7Component,
+    Homework3Component,
+    Homework3BtnComponent
   ],
   imports: [
   BrowserModule,
@@ -48,7 +53,8 @@ import { BmiService } from './bmi.service';
     AppRoutingModule
   ],
   providers: [
-    BmiService
+    BmiService,
+    Hw3Service
   ],
   bootstrap: [AppComponent]
 })
