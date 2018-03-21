@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 import {NgPipesModule} from 'ngx-pipes';
 
@@ -25,6 +26,9 @@ import { BmiService } from './bmi.service';
 import { Homework3Component } from './homework3/homework3.component';
 import { Homework3BtnComponent } from './homework3-btn/homework3-btn.component';
 import { Hw3Service } from './hw3.service';
+import { CallHttpComponent } from './call-http/call-http.component';
+import { HttpService } from './http.service';
+import { NgModelDrivenComponent } from './ng-model-driven/ng-model-driven.component';
 
 @NgModule({
   declarations: [
@@ -44,17 +48,22 @@ import { Hw3Service } from './hw3.service';
     Jq1Component,
     Lesson7Component,
     Homework3Component,
-    Homework3BtnComponent
+    Homework3BtnComponent,
+    CallHttpComponent,
+    NgModelDrivenComponent
   ],
   imports: [
   BrowserModule,
     FormsModule,
     NgPipesModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [
     BmiService,
-    Hw3Service
+    Hw3Service,
+    HttpService
   ],
   bootstrap: [AppComponent]
 })
